@@ -24,4 +24,6 @@ User is asked if they would like each characters
 
 How is the password generated?
     1. What methods would you use?
+        a. For loop of array?
     2. How would you implement the characters being used?
+        a. Concat?
