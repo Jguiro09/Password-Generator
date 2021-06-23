@@ -1,0 +1,27 @@
+User is asked how many characters would you like your password to contain (must be more than 9 and less than 128)
+    QUESTIONS TO ASK:
+        1. What if they type out "nine" or use a number? Will your code be able to tell?
+            a. You could use an if(typeof) method to see if its a number, if it is not a number you can ask for numbers only.
+            b. You could incorporate both strings and numbers, but for strings you would need to figure out how to read every number.
+        2. How can we confirm the number of characters is greater than 9 and less than 128?
+            a. A simple if statement for if its greater or less than 9 or 128.
+        3. How will this be asked?
+            a. You can use a prompt to ask this questions
+            b. Is there a way to limit to only numbers? (RESEARCH)
+        4. Where will you store the answer?
+            a. we can store it inside a variable that will be called later in a for loop to create the password.
+
+User is asked if they would like each characters
+    Questions to ask:
+        1. How will you ask the User
+            a. Confirm()
+        2. Where will you store the variable
+            a. Put inside of a boolean true or false statement that will connect to an if statement
+        2. If no, how will you keep it out of the result
+            a. Have an if statement that connects to a charset, if it comes false we skip the charset
+        3. If yes, how will you include it in the result
+            a. Have an if statement that connects to a charset, if it comes false we add the charset to an ending array (Concat()?)
+
+How is the password generated?
+    1. What methods would you use?
+    2. How would you implement the characters being used?
