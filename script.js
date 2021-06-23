@@ -65,11 +65,11 @@ function checkLength(len)
 function filterPassword()
 {
   var filter = [];
-
+  console.log (filter[1]);
   if(confirm("Would you like your password to include special characters?"))
   {
     console.log("special characters: true");
-    filter.push(true);
+    filter.push(true); 
     console.log(filter[0]);
   }
 
@@ -130,6 +130,7 @@ function createPassword(filter, len)
 {
   var final = [];
   var pass = "";
+  var count = 0;
 
     if(filter[0] === true)
     {
@@ -137,10 +138,20 @@ function createPassword(filter, len)
       final = final.concat(sc);
     }
 
+    else
+    {
+      count++;
+    }
+
     if(filter[1] === true)
     {
       var nc = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
       final = final.concat(nc);
+    }
+
+    else
+    {
+      count++;
     }
 
     var lc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -150,11 +161,27 @@ function createPassword(filter, len)
       final = final.concat(lc);
     }
 
+    else
+    {
+      count++;
+    }
+
     if(filter[3] === true)
     {
       
       var uc = lc.map(lc => lc.toUpperCase());
       final = final.concat(uc);
+    }
+
+    else
+    {
+      count++;
+    }
+
+    if (count = 4)
+    {
+      var nc = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+      final = final.concat(nc);
     }
 
     for (var i = 0; i < len; i++)
