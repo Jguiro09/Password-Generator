@@ -73,6 +73,7 @@ function checkLength(len)
   {return true;}
 }
 
+//Determines what filter the password will be using
 function filterPassword()
 {
   var filter = [];
@@ -136,6 +137,7 @@ function filterPassword()
   return filter;
 }
 
+// Creates the password and sends it to be
 function createPassword(filter, len)
 {
   var final = [];
@@ -153,15 +155,16 @@ function createPassword(filter, len)
       final = final.concat(nc);
     }
 
+    var lc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    
     if(filter[2] === true)
     {
-      var lc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
       final = final.concat(lc);
     }
 
     if(filter[3] === true)
     {
-      var lc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+      
       var uc = lc.map(lc => lc.toUpperCase());
       final = final.concat(uc);
     }
