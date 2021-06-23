@@ -7,7 +7,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
@@ -36,31 +35,20 @@ function check(len)
     checkType(len);
     checkLength(len);
   }
-
   return len;
 }
 
 // Checks if the answer submitted is a number
 function checkType(len)
 {
-  var regExp = /[a-zA-Z]/g;
-
-  if(typeof len === 'string')
+  if(isNaN(len) === true)
   {
-
-    if(regExp.test(len))
-    {return false;}
-    
-    else if(Number.isInteger(parseInt(len)) === true)
-    {return true;}
-
-    else
-    {return false;}
-
+    return false;
   }
-
   else
-  {return false;}
+  {
+    true;
+  }
 }
 
 // Checks the length and make sures it is right size
