@@ -55,41 +55,45 @@ psuedocoding helped immensly in making these codes. By asking questions and atte
 ## Functions
 
 ### generatePassword
-    Where a majority of my functions originate from. When the button is pressed on the website, the first prompt(line 19) runs 
-    asking for a number. This is when the function "check" is used.
+    Where a majority of my functions originate from. When the button is pressed on the website, the first 
+    prompt(line 19) runs asking for a number. This is when the function "check" is used.
 
 ![generatePassword function](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/generatePassword.png)
 ### check(len)
-    Once the user provides an input, the check function incorporates the input into a while loop. This checks for both the type 
-    and the length of the input and if it is approved it is sent back.
+    Once the user provides an input, the check function incorporates the input into a while loop. This 
+    checks for both the type and the length of the input and if it is approved it is sent back.
 
 ![checkFunction](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/check.png)
 ### checkLength(len)
-    This function uses an "if" statement to see if the input is less than 9 or greater than 128. If the input is less than 9 or 
-    greater than 128 then the input is sent back to be changed because it does not fit the parameters.
+    This function uses an "if" statement to see if the input is less than 9 or greater than 128. If the 
+    input is less than 9 or greater than 128 then the input is sent back to be changed because it does 
+    not fit the parameters.
 
 ![checkLength](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/checkLength.png)
 ### checkType(len)
-    This function checks to make sure only a digit was given to the program. This is done by using the ".isNaN()" method. This 
-    will check if the input is not a number and if it returns true then the input is sent back to be changed because it does 
-    not fit the parameter.
+    This function checks to make sure only a digit was given to the program. This is done by using the 
+    ".isNaN()" method. This will check if the input is not a number and if it returns true then the input 
+    is sent back to be changed because it does not fit the parameter.
 
 ![checkType](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/checkType.png)
 ### filterPassword()
-    This function creates a filter for our "createPassword" function to use. It uses  confirm() to ask the user if they would 
-    like characters, letters, or digits. If the user says yes, the program pushes "true" into an array slot that is designated 
-    for them. If the user says no, the program pushes "false" into an array slot that is designated for them.  
+    This function creates a filter for our "createPassword" function to use. It uses  confirm() to ask the 
+    user if they would like characters, letters, or digits. If the user says yes, the program pushes "true" 
+    into an array slot that is designated for them. If the user says no, the program pushes "false" into an 
+    array slot that is designated for them.  
 
 ![filterPassword](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/filterPassword.png)
 ### createPassword(filter, len)
-    This funcion is where the actual password is made. Using the filter provided, the function will go through a series of if 
-    statements detecting if the specific filter will be used. If true, it will be used. If false, it will not be used.
+    This funcion is where the actual password is made. Using the filter provided, the function will go through
+    a series of if statements detecting if the specific filter will be used. If true, it will be used. If false,
+    it will not be used.
 
     NOTE: If each if statement returns false, count will = 4 and auto assign numbers to the password
 
-    After the array has been filtered, a for loop will run which utilizes Math.floor() and Math.random() to choose a random 
-    element from the array. This will go as long as the users inital number provided. After the foor loop is done the password 
-    is passed back to the "generatePassword" method and from there it is sent to be seen by the user.
+    After the array has been filtered, a for loop will run which utilizes Math.floor() and Math.random() to 
+    choose a random element from the array. This will go as long as the users inital number provided. After the 
+    foor loop is done the password is passed back to the "generatePassword" method and from there it is sent to 
+    be seen by the user.
 
 ![createPassword](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/createPassword.png)
 
