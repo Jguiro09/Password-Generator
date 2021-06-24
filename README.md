@@ -3,13 +3,13 @@
 
 ## Table of Content
 
-[Deployed Website](#Deployed-Website)  
-[Primary Goal](#Primary-Goal)  
-[Psuedocoding](#Psuedocoding)  
-[Functions](#Functions)  
-[Gif of Website](#Gif-of-Website)  
-[Conclusion](#Conclusion)  
-[License](#License)  
+* [Deployed Website](#Deployed-Website)  
+* [Primary Goal](#Primary-Goal)  
+* [Psuedocoding](#Psuedocoding)  
+* [Functions](#Functions)  
+* [Gif of Website](#Gif-of-Website)  
+* [Conclusion](#Conclusion)  
+* [License](#License)  
 
 ## Deployed Website
 [**Click here for Password Generator**](https://jguiro09.github.io/Password-Generator/)
