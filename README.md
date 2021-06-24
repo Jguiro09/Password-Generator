@@ -80,7 +80,7 @@ psuedocoding helped immensly in making these codes. By asking questions and atte
     like characters, letters, or digits. If the user says yes, the program pushes "true" into an array slot that is designated 
     for them. If the user says no, the program pushes "false" into an array slot that is designated for them.  
 
-![filterPassword](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/createPassword.png)
+![filterPassword](https://raw.githubusercontent.com/Jguiro09/Password-Generator/main/assets/README/filterPassword.png)
 ### createPassword(filter, len)
     This funcion is where the actual password is made. Using the filter provided, the function will go through a series of if 
     statements detecting if the specific filter will be used. If true, it will be used. If false, it will not be used.
